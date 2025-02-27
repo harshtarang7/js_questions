@@ -35,3 +35,4 @@ const removeDuplicates = arr.filter((value, index, arr) => {
   return arr.indexOf(value) === index;
 });
 console.log(removeDuplicates);
+
