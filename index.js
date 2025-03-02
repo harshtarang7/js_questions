@@ -13,7 +13,13 @@ const FindAreaOfRectangle =(l,w)=>{
   let Area = l * w;
   return Area;
 }
-console.log("Rectangle",FindAreaOfRectangle(23,0))
+console.log("Rectangle",FindAreaOfRectangle(23,1))
+
+// find even or odd
+const EvenOrOdd =(a) => {
+  return a%2==0 ? `even:${a}`: `odd:${a}` 
+}
+console.log(EvenOrOdd(30))
 
 // find duplicates
 // 1-
