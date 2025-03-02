@@ -1,3 +1,17 @@
+// 1- print sum of two numbers
+const addTwoNumbers = (a,b)=>{
+  return a+b
+}
+console.log("sum",addTwoNumbers(2,3));
+
+// area of rectangle 
+// formula  A = L * W
+const FindAreaOfRectangle =(l,w)=>{
+  let Area = l * w;
+  return Area;
+}
+console.log("Rectangle",FindAreaOfRectangle(2,3))
+
 // find duplicates
 // 1-
 // arr[0] = 1,
