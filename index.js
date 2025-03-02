@@ -7,10 +7,13 @@ console.log("sum",addTwoNumbers(2,3));
 // area of rectangle 
 // formula  A = L * W
 const FindAreaOfRectangle =(l,w)=>{
+  if(l<=0 || w<=0){
+    return Error('length cannot 0 or less than it or width should be positive')
+  }
   let Area = l * w;
   return Area;
 }
-console.log("Rectangle",FindAreaOfRectangle(2,3))
+console.log("Rectangle",FindAreaOfRectangle(23,0))
 
 // find duplicates
 // 1-
