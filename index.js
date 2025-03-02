@@ -17,10 +17,35 @@ console.log("Rectangle",FindAreaOfRectangle(23,1))
 
 // find even or odd
 const EvenOrOdd =(a) => {
-  return a%2==0 ? `even:${a}`: `odd:${a}` 
+  return a%2===0 ? `even:${a}`: `odd:${a}` 
 }
 console.log(EvenOrOdd(30))
 
+
+// finding smallest number from given three numbers
+const smallestNumber = (a,b,c)=>{
+  if(a<b && a<c){
+    return `a is smallest number ${a}`
+  }
+  else if(b<a && b<c){
+     return `b is smaller number ${b}`
+  }
+  else{
+     return `c is smaller number ${c}`
+  }
+}
+console.log(smallestNumber(12,3,99))
+
+// optimized of smallest among three numbers
+const smallestNumberOptimized =(a,b,c)=>{
+
+  return a<b && a<c 
+  ? `a is smallest number ${a}`
+  : b<a && b<c 
+  ? `b is smaller number ${b}`
+  :`c is smaller number ${c}`
+}
+console.log(smallestNumberOptimized(122,302,99))
 // find duplicates
 // 1-
 // arr[0] = 1,
