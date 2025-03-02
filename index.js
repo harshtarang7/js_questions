@@ -46,6 +46,25 @@ const smallestNumberOptimized =(a,b,c)=>{
   :`c is smaller number ${c}`
 }
 console.log(smallestNumberOptimized(122,302,99))
+
+
+// reverse of string
+// spliting the string
+// creating new empty array and looping over the splitted string
+// looping start from end till the index of splitted string is greater or equal to 0
+// pushing into new array
+ 
+const reverseString = (str)=>{
+  const newString =str.split('');
+  let newstr = [];
+
+  for(let i=newString.length-1; i >= 0; i--){
+    newstr.push(newString[i])
+  }
+  console.log(newstr.join(''))
+}
+console.log(reverseString('tarang'))
+
 // find duplicates
 // 1-
 // arr[0] = 1,
